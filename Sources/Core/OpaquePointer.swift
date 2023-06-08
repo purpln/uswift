@@ -1,6 +1,3 @@
-// Copyright © 2022 μSwift Authors.  All Rights Reserved.
-// SPDX-License-Identifier: BSD-3
-
 // This `OpaquePointer` implementation is known to crash 5.4 and 5.5 compiler releases on Windows.
 #if swift(>=5.6)
 

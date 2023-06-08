@@ -1,6 +1,3 @@
-// Copyright © 2022 μSwift Authors.  All Rights Reserved.
-// SPDX-License-Identifier: BSD-3
-
 public protocol Numeric: AdditiveArithmetic, ExpressibleByIntegerLiteral {
   static func * (_ lhs: Self, _ rhs: Self) -> Self
   static func *= (_ lhs: inout Self, _ rhs: Self)

@@ -1,6 +1,3 @@
-// Copyright © 2022 μSwift Authors.  All Rights Reserved.
-// SPDX-License-Identifier: BSD-3
-
 @frozen
 public struct StaticString {
   /// `StaticString` stores either a pointer to null-terminated string data, or

@@ -1,6 +1,3 @@
-// Copyright © 2018 μSwift Authors.  All Rights Reserved.
-// SPDX-License-Identifier: BSD-3
-
 public protocol _ExpressibleByBuiltinBooleanLiteral {
   init(_builtinBooleanLiteral value: Builtin.Int1)
 }

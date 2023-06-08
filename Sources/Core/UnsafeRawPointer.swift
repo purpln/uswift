@@ -1,6 +1,3 @@
-// Copyright © 2022 μSwift Authors.  All Rights Reserved.
-// SPDX-License-Identifier: BSD-3
-
 @frozen
 public struct UnsafeRawPointer: _Pointer {
   public typealias Pointee = UInt8

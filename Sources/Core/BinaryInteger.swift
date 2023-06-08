@@ -1,6 +1,3 @@
-// Copyright © 2022 μSwift Authors.  All Rights Reserved.
-// SPDX-License-Identifier: BSD-3
-
 public protocol BinaryInteger: Numeric {
   override static func + (_ lhs: Self, _ rhs: Self) -> Self
   override static func - (_ lhs: Self, _ rhs: Self) -> Self
