@@ -1,5 +1,0 @@
-module Runtime {
-    header "Types.h"
-    header "Visibility.h"
-    export *
-}

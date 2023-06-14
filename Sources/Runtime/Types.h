@@ -1,8 +1,4 @@
-// Copyright © 2018 μSwift Authors.  All Rights Reserved.
-// SPDX-License-Identifier: BSD-3
-
-#ifndef uSwift_Runtime_Types_h
-#define uSwift_Runtime_Types_h
+#pragma once
 
 typedef struct Metadata Metadata;
 typedef struct OpaqueValue OpaqueValue;
@@ -40,5 +36,3 @@ typedef void(__attribute__((__swiftcall__)) *
              StoreExtraInhabitantTagFn)(OpaqueValue *value, unsigned store_case,
                                         unsigned extra_inhabitants,
                                         const Metadata *payload);
-
-#endif
