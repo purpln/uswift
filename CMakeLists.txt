@@ -1,6 +1,7 @@
 cmake_minimum_required(VERSION 3.18)
 
-project(uSwift LANGUAGES C Swift)
+project(uSwift
+  LANGUAGES C Swift)
 
 set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
 set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)

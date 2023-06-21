@@ -33,6 +33,7 @@ add_library(swiftCore
   SignedNumeric.swift
   StaticString.swift
   Strideable.swift
+  Swift.swift
   UInt.swift
   UInt8.swift
   UInt16.swift
@@ -43,11 +44,12 @@ add_library(swiftCore
   UnsafePointer.swift
   UnsafeRawPointer.swift
   Void.swift)
-
-set_target_properties(swiftCore PROPERTIES Swift_MODULE_NAME Swift)
-
-target_compile_options(swiftCore PRIVATE -parse-stdlib -nostdimport -Xfrontend -disable-objc-interop "SHELL:-Xfrontend -enable-resilience")
-
-target_link_libraries(swiftCore PRIVATE swiftRuntime)
-
-target_link_options(swiftCore PRIVATE "SHELL:-Xclang-linker -nostdlib")
+set_target_properties(swiftCore PROPERTIES
+  Swift_MODULE_NAME Swift)
+target_compile_options(swiftCore PRIVATE
+  -parse-stdlib
+  "SHELL:-Xfrontend -enable-resilience")
+target_link_libraries(swiftCore PRIVATE
+  swiftRuntime)
+target_link_options(swiftCore PRIVATE
+  "SHELL:-Xclang-linker -nostdlib")
