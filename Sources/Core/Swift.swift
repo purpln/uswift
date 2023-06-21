@@ -1,1 +1,1 @@
-@_silgen_name("test") func test() {}
+@_cdecl("test") func test() {}
