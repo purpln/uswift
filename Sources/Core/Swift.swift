@@ -1,1 +1,1 @@
-@_cdecl("test") func test() {}
+@_cdecl("test") public func test() {}
