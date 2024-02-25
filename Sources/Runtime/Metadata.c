@@ -49,13 +49,3 @@ swift_getTypeByMangledNameInContextInMetadataState(size_t metadataState,
                                                    const void *const *genericArgs) {
     return NULL;
 }
-
-SWIFT_RUNTIME_ABI
-float swift_intToFloat32(const size_t *data) {
-    return 0;
-}
-
-SWIFT_RUNTIME_ABI
-double swift_intToFloat64(const size_t *data) {
-    return 0;
-}

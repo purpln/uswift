@@ -30,8 +30,7 @@ public struct Range<Bound: Comparable> {
 
 extension Range: RangeExpression {
     @inlinable
-    public func relative<C: Collection>(to _: C) -> Range<Bound>
-    where C.Index == Bound {
+    public func relative<C: Collection>(to _: C) -> Range<Bound> where C.Index == Bound {
         return self
     }
 }

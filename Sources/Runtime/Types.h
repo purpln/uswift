@@ -32,7 +32,4 @@ typedef struct ValueTypeDescriptor ValueTypeDescriptor;
 typedef struct ValueWitnessTable {
 } ValueWitnessTable;
 
-typedef void(__attribute__((__swiftcall__)) *
-             StoreExtraInhabitantTagFn)(OpaqueValue *value, unsigned store_case,
-                                        unsigned extra_inhabitants,
-                                        const Metadata *payload);
+typedef void(__attribute__((__swiftcall__)) * StoreExtraInhabitantTagFn)(OpaqueValue *value, unsigned store_case, unsigned extra_inhabitants, const Metadata *payload);
