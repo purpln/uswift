@@ -8,6 +8,9 @@ SWIFT_RUNTIME_ABI
 ValueWitnessTable $sBi32_WV;
 
 SWIFT_RUNTIME_ABI
+ValueWitnessTable $sBi64_WV;
+
+SWIFT_RUNTIME_ABI
 ValueWitnessTable $sytWV;
 
 SWIFT_RUNTIME_ABI

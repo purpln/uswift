@@ -10,20 +10,20 @@ SWIFT_RUNTIME_ABI
 ValueMetadata *swift_allocateGenericValueMetadata(
     const ValueTypeDescriptor *descriptor, const void *arguments,
     const GenericValueMetadataPattern *pattern, size_t extra) {
-  return NULL;
+    return NULL;
 }
 
 SWIFT_RUNTIME_ABI
 MetadataResponse swift_checkMetadataState(MetadataRequest request,
                                           const Metadata *metdata) {
-  return (MetadataResponse){};
+    return (MetadataResponse){};
 };
 
 SWIFT_RUNTIME_ABI
 MetadataResponse
 swift_getGenericMetadata(MetadataRequest request, const void *const *arguments,
                          const TypeContextDescriptor *descriptor) {
-  return (MetadataResponse){};
+    return (MetadataResponse){};
 }
 
 SWIFT_RUNTIME_ABI
@@ -31,7 +31,7 @@ MetadataResponse
 swift_getTupleTypeMetadata2(MetadataRequest request, const Metadata *element0,
                             const Metadata *element1, const char *labels,
                             const ValueWitnessTable *witnesses) {
-  return (MetadataResponse){};
+    return (MetadataResponse){};
 }
 
 SWIFT_RUNTIME_ABI
@@ -47,5 +47,15 @@ swift_getTypeByMangledNameInContextInMetadataState(size_t metadataState,
                                                    size_t typeNameLength,
                                                    const void *context, 
                                                    const void *const *genericArgs) {
-  return NULL;
+    return NULL;
+}
+
+SWIFT_RUNTIME_ABI
+float swift_intToFloat32(const size_t *data) {
+    return 0;
+}
+
+SWIFT_RUNTIME_ABI
+double swift_intToFloat64(const size_t *data) {
+    return 0;
 }
